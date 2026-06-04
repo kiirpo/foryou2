@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ku">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>وەڵامم ئەدیتەوە🙂!!</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+    font-family:Arial,sans-serif;
+}
+
+.container{
+    background:rgb(241, 151, 219);
+    padding: 80px;
+    border-radius: 70px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1{
+    color:#fcfcfc;
+    margin-bottom:30px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+}
+
+button{
+    border:none;
+    border-radius:15px;
+    cursor:pointer;
+    font-size:20px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+#yesBtn{
+    background:#4CAF50;
+    color:white;
+    padding:15px 30px;
+    font-size:28px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+#noBtn{
+    background:#ff4d4d;
+    color:white;
+    padding:15px 30px;
+    font-size:28px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    padding:15px 30px;
+    font-size:28px;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>وەڵامم ئەدیتەوە🙂!!</h1>
+
+    <div class="buttons">
+        <button id="yesBtn">وەڵام ئەدەمەوە🥰</button>
+        <button id="noBtn">وەڵام نایدەمەوە😡</button>
+    </div>
+</div>
+
+<script>
+let size = 20;
+
+document.getElementById("noBtn").addEventListener("click" , () => {
+    size += 20;
+    document.getElementById("yesBtn").style.fontSize = size + "px";
+});
+
+document.getElementById("yesBtn").addEventListener("click", () => {
+    document.querySelector(".container").innerHTML =
+            "<h1>بۆ رازیبوون ژمارە یەک لێ بدە بۆ رازی نەبەوون ژمارە یەک لێ بدە🙂</h1><p>زۆررررر سوپاسسسسس✨🥰😂</p>";
+});
+</script>
+
+</body>
+</html>
