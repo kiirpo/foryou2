@@ -22,8 +22,10 @@ body{
 }
 
 .container{
+    width: 90%;
+    max-width: 400px;
     background:rgb(241, 151, 219);
-    padding: 80px;
+    padding: 30px;
     border-radius: 70px;
     text-align:center;
     box-shadow:0 10px 30px rgba(0,0,0,0.2);
@@ -32,12 +34,15 @@ body{
 h1{
     color:#fcfcfc;
     margin-bottom:30px;
+    font-size: 24px;
+    word-break: break-word;
 }
 
 .buttons{
     display:flex;
     justify-content:center;
-    gap:15px;
+    gap:10px;
+    flex-wrap: wrap;
 }
 
 button{
@@ -55,6 +60,8 @@ button{
     padding:15px 30px;
     font-size:28px;
     box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    font-size: 20px;
+    max-width: 100%;
 }
 
 #noBtn{
@@ -64,7 +71,8 @@ button{
     font-size:28px;
     box-shadow:0 10px 30px rgba(0,0,0,0.2);
     padding:15px 30px;
-    font-size:28px;
+    font-size:20px;
+    max-width: 100%;
 }
 
 button:hover{
